@@ -1,6 +1,15 @@
-nums = []
+nums = [0, 1, 0, 3, 0, 5]
 
-mid = (len(nums) + 1) // 2
-result = [nums[:mid], nums[mid:]]
+result = []
+
+
+for i in nums:
+    if i != 0:
+        result.append(i)
+
+
+for i in nums:
+    if i == 0:
+        result.append(i)
 
 print(result)
