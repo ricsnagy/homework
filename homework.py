@@ -1,15 +1,9 @@
-nums = [0, 1, 0, 3, 0, 5]
+nums = [1, 3, 5, 7, 9]
 
-result = []
-
-
-for i in nums:
-    if i != 0:
-        result.append(i)
-
-
-for i in nums:
-    if i == 0:
-        result.append(i)
-
-print(result)
+if nums == []:
+    print(0)
+else:
+    s = 0
+    for i in range(0, len(nums), 2):
+        s += nums[i]
+    print(s * nums[-1])
